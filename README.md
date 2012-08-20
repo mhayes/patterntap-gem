@@ -1,6 +1,6 @@
-# Patterntap
+# PatternTap
 
-TODO: Write a gem description
+This provides a simple wrapper for retrieving information about the latest PatternTap posts.
 
 ## Installation
 
@@ -18,12 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can use the following code to access PatternTap posts in your application:
 
-## Contributing
+    PatternTap.recent
+    
+That will return the most recent 10 posts from PatternTap.  Each PatternTap post has the following methods defined on it:
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+  * URL: The url to the post
+  * Title: The title of the post
+  * Image URL: The url to the image associated with post
+  * Date: The date the post was published
