@@ -16,7 +16,7 @@ module PatternTap
         Item.new(item)
       end
     rescue Exception
-      false
+      []
     end
   end
   
